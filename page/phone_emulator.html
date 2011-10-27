@@ -1,0 +1,156 @@
+<html>
+<head>
+<script type="text/javascript" src="phone_emulator.js"></script>
+
+<link rel="stylesheet" type="text/css" href="phone_emulator.css" />
+<style>
+
+#iphone {
+	height: 743px;
+	width: 399px;
+	background-color: black;
+	background-image: url(img/iphone.jpg);
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#iphone_result {
+	width: 318px;
+	height: 415px;
+	border: none;
+	position: relative;
+	left: 41px;
+	top: 159px;
+}
+
+#ipad {
+	height: 1006px;
+	width: 1276px;
+	background-color: black;
+	background-image: url(img/ipad.jpg);
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#ipad_result {
+	width: 1024px;
+	height: 690px;
+	border: none;
+	position: relative;
+	left: 127px;
+	top: 195px;
+}
+
+#desire {
+	height: 750px;
+	width: 386px;
+	background-color: black;
+	background-image: url(img/desire.jpg);
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#desire_result {
+	width: 305px;
+	height: 505px;
+	border: none;
+	position: relative;
+	left: 40px;
+	top: 89px;
+}
+
+#rim {
+	height: 794px;
+	width: 448px;
+	background-color: black;
+	background-image: url(img/rim.jpg);
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#rim_result {
+	width: 372px;
+	height: 281px;
+	border: none;
+	position: relative;
+	left: 36px;
+	top: 140px;
+}
+
+#k750 {
+	height: 571px;
+	width: 280px;
+	background-color: black;
+	background-image: url(img/k750.jpg);
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#k750_result {
+	width: 167px;
+	height: 210px;
+	border: none;
+	position: relative;
+	left: 57px;
+	top: 72px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+</style>
+</head>
+<body>
+	<div id="url_panel">
+		<input type="text" id="urlbox" />
+		<button id="loadPage" type="button">Go!</button>
+	</div>
+
+	<div class="tabber">
+
+		<div class="device" title="iPhone">
+			<div id="iphone">
+				<input type="hidden" class="deviceUA" id="iphone_ua"
+					value="Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_0 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Mobile/7D11" />
+				<iframe class="deviceResult" id="iphone_result"> </iframe>
+			</div>
+		</div>
+
+		<div class="device" title="iPad">
+			<div id="ipad">
+				<input type="hidden" class="deviceUA" id="ipad_ua"
+					value="Mozilla/5.0 (iPad; U; CPU iPhone OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7D11" />
+				<iframe class="deviceResult" id="ipad_result"> </iframe>
+			</div>
+		</div>
+
+		<div class="device" title="HTC Desire">
+			<div id="desire">
+				<input type="hidden" class="deviceUA" id="desire_ua"
+					value="Mozilla/5.0 (Linux; U; Android 2.2; en-gb; Desire HD Build/FRF91) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2" />
+				<iframe class="deviceResult" id="desire_result"> </iframe>
+			</div>
+		</div>
+
+		<div class="device" title="BlackBerry Bold">
+			<div id="rim">
+				<input type="hidden" class="deviceUA" id="rim_ua"
+					value="Mozilla/5.0 (BlackBerry; U; BlackBerry 9780; en) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.131 Mobile Safari/534.1+" />
+				<iframe class="deviceResult" id="rim_result"> </iframe>
+			</div>
+		</div>
+
+		<div class="device" title="Sony Ericsson K750i">
+			<div id="k750">
+				<input type="hidden" class="deviceUA" id="k750_ua"
+					value="SonyEricssonk750i/R1CA Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1" />
+				<iframe class="deviceResult" id="k750_result"> </iframe>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
